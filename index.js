@@ -42,4 +42,4 @@ client.on(Events.InteractionCreate, interaction => {
 	}
 });
 
-client.login("MTAzNzAyNDA3NDI4NDY2Mjg5Ng.GwIlhd.1ITpe53kvsqYknkwDXxbxAIbhE9cvjmQeQpoEc");
+client.login("");
