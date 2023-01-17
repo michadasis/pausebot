@@ -1,0 +1,2 @@
+# pausebot
+Discord JS bot
