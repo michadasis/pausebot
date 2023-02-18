@@ -3,5 +3,5 @@
 [![Discord Server](https://discordapp.com/api/guilds/839447938731212810/embed.png)](https://discord.gg/r2vNsEdnEH)
 
 *Welcome to PauseBot*
-PauseBot is a discord.js bot I work on as a hobby, it has a variety of features.
+,PauseBot is coded in discord.js. I work on it as a hobby, as a bot it has a variety of features.
 
