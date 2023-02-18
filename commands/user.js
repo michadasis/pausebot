@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const { ownerName, Footer } = require('../config.json');
+const { ownerName, footer } = require('../config.json');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -18,7 +18,7 @@ module.exports = {
 		{ name: '**Joined Guild At**', value: `${interaction.member.joinedAt}`},
 	)
 	.setTimestamp()
-	.setFooter({ text: `${Footer + ownerName}`
+	.setFooter({ text: `${footer + ownerName}`
 	});
 		await interaction.reply({ embeds: [UserEmbed] });
 	},

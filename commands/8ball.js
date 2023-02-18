@@ -1,4 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { ownerName, footer } = require('../config.json');
 let eightballwords = [ 
     'It is certain.',
     'It is decidedly so.',
@@ -40,6 +41,8 @@ module.exports = {
             { name: '**Reply:**', value: `${eightballrandom}`},
         )
         .setColor(0x0099FF)
+        .setTimestamp()
+	    .setFooter({ text: `${footer + ownerName}`})
 		await interaction.reply({ embeds: [eightballEmbed] });
 	},
 };

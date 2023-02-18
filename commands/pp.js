@@ -1,4 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { ownerName, footer } = require('../config.json');
 let pps = [
     "8D",
     "8=D",
@@ -34,6 +35,8 @@ module.exports = {
         .setTitle(`peepee size machine`)
         .setDescription(`${user}'s penis ${pp}`)
         .setColor(0x0099FF)
+        .setTimestamp()
+	    .setFooter({ text: `${footer + ownerName}`})
 		await interaction.reply({ embeds: [ppEmbed] });
 	},
 };
