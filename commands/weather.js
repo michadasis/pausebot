@@ -37,7 +37,7 @@ const exampleEmbed = (
         )
 		.setThumbnail(`http://openweathermap.org/img/w/${icon}.png`)
         .setTimestamp()
-	    .setFooter({ text: `${footer} + ${ownerName}`})
+	    .setFooter({ text: `${footer}${ownerName}`})
 
 module.exports = {
     data: new SlashCommandBuilder()
